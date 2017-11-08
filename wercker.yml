@@ -37,4 +37,5 @@ push:
         password: $DOCKER_PASSWORD
         tag:  $DOCKER_TAG
         repository: $DOCKER_REPOSITORY
-        cmd: ./gradlew --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build        
+        cmd: ./gradlew --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
+        registry: https://registry.hub.docker.com
